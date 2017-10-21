@@ -2,10 +2,11 @@
 
 [![Build Status](https://travis-ci.org/jayson/jayson-mac-ansible.svg?branch=master)](https://travis-ci.org/jayson/jayson-mac-ansible)
 
-This playbook installs all my configuration I do with a new mac laptop. 
+This playbook installs all my homebrew apps and configurations for me instead
+of manually configuring every new laptop I get.
 
 *See Also*
-  - Forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/inspired)
+  - Forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/)
 
 ## Installation
 
@@ -100,7 +101,6 @@ Applications (installed with Homebrew Cask):
   - [Alfred](https://www.alfredapp.com/)
   - [Google Chrome](https://www.google.com/chrome/)
   - [Homebrew](http://brew.sh/)
-<<<<<<< HEAD
   - [LICEcap](http://www.cockos.com/licecap/)
   - [nvALT](http://brettterpstra.com/projects/nvalt/)
   - [Sequel Ace](https://sequel-ace.com) (MySQL client)
@@ -128,7 +128,6 @@ Packages (installed with Homebrew):
   - nvm
   - php
   - ssh-copy-id
-=======
   - [Slack](https://slack.com/)
   - [Vagrant](https://www.vagrantup.com/)
   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
@@ -143,24 +142,19 @@ Packages (installed with Homebrew):
   - mas
   - node
   - rbenv
->>>>>>> 6dd05f7 (Changing README for my own uses)
   - readline
   - ruby
   - the_silver_searcher
   - vim
   - watch
   - wget
-<<<<<<< HEAD
   - wrk
   - zsh-history-substring-search
-=======
->>>>>>> 6dd05f7 (Changing README for my own uses)
 
 My [dotfiles](https://github.com/jayson/dotfiles) are also installed into the current user's home directory. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
 ## Full / From-scratch setup guide
 
-<<<<<<< HEAD
 Since I've used this playbook to set up something like 20 different Macs, I decided to write up a full 100% from-scratch install for my own reference (everyone's particular install will be slightly different).
 
 You can see my full from-scratch setup document here: [full-mac-setup.md](full-mac-setup.md).
@@ -198,4 +192,4 @@ This project is [continuously tested on Travis CI's macOS infrastructure](https:
 ## Author
 
   [Jayon Paul](http://www.jaysonmpaul.com/), 2017 (originally forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/inspired))
->>>>>>> 6dd05f7 (Changing README for my own uses)
+  [Jayon Paul](http://www.jaysonmpaul.com/), 2017 (originally forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/))
