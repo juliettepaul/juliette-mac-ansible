@@ -39,6 +39,9 @@
       when: configure_sublime
       tags: ['sublime-text']
 
+    - include: tasks/keyboard.yml
+      tags: ['keyboard']
+
     - name: Run post-provision task files in a block.
       tags: ['post']
       block:
