@@ -182,6 +182,10 @@ This project was created by [Jeff Geerling](https://www.jeffgeerling.com/) (orig
 ### Configuration to be added:
 
   - I need to finish dotfiles setup and vim configuration
+  - Installing licenses for apps
+  - Rest of App Setup
+  - Create Inboxes
+  - 
 
 ## Testing the Playbook
 

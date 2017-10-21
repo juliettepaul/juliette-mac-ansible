@@ -39,10 +39,11 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-<<<<<<< HEAD
   - gh
+  - python
   - cfssl
   - ctags
+  - dockutil
   - fzf
   - git
   - kubernetes-cli
@@ -65,12 +66,14 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  # - docker
-  # - alfred
-  # - google-chrome
-  # - slack
+  - docker
+  - alfred
+  - google-chrome
+  - slack
   - vagrant
   - virtualbox
+  - iterm2
+  - fantastical
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -116,6 +119,30 @@ sublime_package_control:
 gem_packages:
   - name: bundler
     state: present # present/absent/latest, default: present
+
+dockitems_to_remove:
+  - Launchpad
+  - Contacts
+  - Notes
+  - Reminders
+  - Maps
+  - Pages
+  - Photos
+  - FaceTime
+  - iBooks
+  - App Store
+  - System Preferences
+
+dockitems_to_persist:
+  - name: iTerm
+    path: /Applications/iTerm2.app
+  - name: Fantastical 2
+    path: /Applications/Fantastical 2.app
+  - name: Chrome
+    path: /Applications/Chrome.app
+  - name: Slack
+    path: /Applications/Slack.app
+
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
