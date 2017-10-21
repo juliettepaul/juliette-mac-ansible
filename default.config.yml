@@ -22,10 +22,14 @@ sudoers_custom_config: ""
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
-dotfiles_repo_version: master # Replace with your default branch
+configure_dotfiles: yes
+configure_sudoers: yes
+configure_osx: yes
+
+dotfiles_repo: https://github.com/jayson/dotfiles.git
+dotfiles_repo_local_destinationdotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/projects/dotfiles
+
 dotfiles_files:
   - .zshrc
   - .gitignore
@@ -35,51 +39,42 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
+<<<<<<< HEAD
   - gh
-  - go
-  - gpg
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - nmap
+  - cfssl
+  - ctags
+  - fzf
+  - git
+  - kubernetes-cli
+  - mas
   - node
-  - nvm
-  - php
-  - pngpaste
-  - ssh-copy-id
+  - rbenv
   - readline
-  - openssl
-  - pv
+  - ruby
+  - the_silver_searcher
+  - vim
+  - watch
   - wget
   - wrk
   - zsh-history-substring-search
 
-homebrew_taps: []
+
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
-  - docker
-  - dropbox
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - sequel-ace
-  - slack
-  - sublime-text
-  - transmit
+  # - docker
+  # - alfred
+  # - google-chrome
+  # - slack
+  - vagrant
+  - virtualbox
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
-mas_email: ""
+mas_email: "jaysonpaul@gmail.com"
 mas_password: ""
 
 osx_script: "~/.osx --no-restart"
@@ -91,10 +86,6 @@ composer_packages: []
 # - name: drush
 #   state: present # present/absent, default: present
 #   version: "^8.1" # default: N/A
-gem_packages: []
-# - name: bundler
-#   state: present # present/absent/latest, default: present
-#   version: "~> 1.15.1" # default: N/A
 npm_packages: []
 # - name: webpack
 #   state: present # present/absent/latest, default: present
@@ -121,6 +112,10 @@ sublime_package_control:
   - "Theme - Cobalt2"
   - "TrailingSpaces"
   - "WordingStatus"
+
+gem_packages:
+  - name: bundler
+    state: present # present/absent/latest, default: present
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
