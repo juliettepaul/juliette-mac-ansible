@@ -1,10 +1,11 @@
-<img src="https://raw.githubusercontent.com/geerlingguy/mac-dev-playbook/master/files/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
+# Jayson's Mac Ansible Playbook
 
-# Mac Development Ansible Playbook
+[![Build Status](https://travis-ci.org/jayson/jayson-mac-ansible.svg?branch=master)](https://travis-ci.org/jayson/jayson-mac-ansible)
 
-[![CI][badge-gh-actions]][link-gh-actions]
+This playbook installs all my configuration I do with a new mac laptop. 
 
-This playbook installs and configures most of the software I use on my Mac for web and software development. Some things in macOS are slightly difficult to automate, so I still have a few manual installation steps, but at least it's all documented here.
+*See Also*
+  - Forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/inspired)
 
 ## Installation
 
@@ -96,11 +97,10 @@ Applications (installed with Homebrew Cask):
 
   - [ChromeDriver](https://sites.google.com/chromium.org/driver/)
   - [Docker](https://www.docker.com/)
-  - [Dropbox](https://www.dropbox.com/)
-  - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+  - [Alfred](https://www.alfredapp.com/)
   - [Google Chrome](https://www.google.com/chrome/)
-  - [Handbrake](https://handbrake.fr/)
   - [Homebrew](http://brew.sh/)
+<<<<<<< HEAD
   - [LICEcap](http://www.cockos.com/licecap/)
   - [nvALT](http://brettterpstra.com/projects/nvalt/)
   - [Sequel Ace](https://sequel-ace.com) (MySQL client)
@@ -128,19 +128,39 @@ Packages (installed with Homebrew):
   - nvm
   - php
   - ssh-copy-id
+=======
+  - [Slack](https://slack.com/)
+  - [Vagrant](https://www.vagrantup.com/)
+  - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+Packages (installed with Homebrew):
+
+  - cfssl
+  - ctags
+  - fzf
+  - git
+  - kubernetes-cli
+  - mas
+  - node
+  - rbenv
+>>>>>>> 6dd05f7 (Changing README for my own uses)
   - readline
-  - openssl
-  - pv
+  - ruby
+  - the_silver_searcher
+  - vim
+  - watch
   - wget
+<<<<<<< HEAD
   - wrk
   - zsh-history-substring-search
+=======
+>>>>>>> 6dd05f7 (Changing README for my own uses)
 
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
-
-Finally, there are a few other preferences and settings added on for various apps and services.
+My [dotfiles](https://github.com/jayson/dotfiles) are also installed into the current user's home directory. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
 ## Full / From-scratch setup guide
 
+<<<<<<< HEAD
 Since I've used this playbook to set up something like 20 different Macs, I decided to write up a full 100% from-scratch install for my own reference (everyone's particular install will be slightly different).
 
 You can see my full from-scratch setup document here: [full-mac-setup.md](full-mac-setup.md).
@@ -164,3 +184,18 @@ This project was created by [Jeff Geerling](https://www.jeffgeerling.com/) (orig
 
 [badge-gh-actions]: https://github.com/geerlingguy/mac-dev-playbook/actions/workflows/ci.yml/badge.svg
 [link-gh-actions]: https://github.com/geerlingguy/mac-dev-playbook/actions/workflows/ci.yml
+=======
+### Configuration to be added:
+
+  - I need to finish dotfiles setup and vim configuration
+
+## Testing the Playbook
+
+  You can follow the instructions here to create a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm) for testing your playbook changes
+
+This project is [continuously tested on Travis CI's macOS infrastructure](https://travis-ci.org/jayson/jayson-mac-ansible).
+
+## Author
+
+  [Jayon Paul](http://www.jaysonmpaul.com/), 2017 (originally forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/inspired))
+>>>>>>> 6dd05f7 (Changing README for my own uses)
