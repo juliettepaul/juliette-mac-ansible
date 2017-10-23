@@ -1,26 +1,11 @@
 ---
-configure_dotfiles: true
-configure_terminal: true
-configure_osx: true
+<<<<<<< HEAD
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
-dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
 
-configure_sudoers: false
-sudoers_custom_config: ""
-# Example:
-# sudoers_custom_config: |
-#   # Allow users in admin group to use sudo with no password.
-#   %admin ALL=(ALL) NOPASSWD: ALL
+user: jpaul
+downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
 configure_sudoers: yes
@@ -127,7 +112,7 @@ npm_packages: []
 pip_packages: []
 # TODO: special virtualenv setup
 
-dockitems_to_remove:
+dockitems_remove:
   - Launchpad
   - Contacts
   - Notes
@@ -141,7 +126,7 @@ dockitems_to_remove:
   - System Preferences
   - Downloads
 
-dockitems_to_persist:
+dockitems_persist:
   - name: Notes
     path: /Applications/Notes.app
     position: 1
