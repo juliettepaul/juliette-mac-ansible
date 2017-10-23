@@ -25,6 +25,8 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+    - role: iterm
+      tags: ['iterm']
 
   tasks:
     - import_tasks: tasks/sudoers.yml
