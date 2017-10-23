@@ -18,7 +18,10 @@
       tags: ['homebrew']
     - role: geerlingguy.mac.mas
       when: (mas_installed_apps | bool) or (mas_installed_app_ids | bool)
-      tags: ['mas']
+      ignore_errors: true
+    - role: dotfiles
+      when: configure_dotfiles
+      tags: ['dotfiles']
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
