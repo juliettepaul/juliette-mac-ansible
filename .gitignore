@@ -5,3 +5,5 @@
 config.yml
 *.un~
 *.swp
+roles/geerlingguy.*
+roles/elliotweiser.*
