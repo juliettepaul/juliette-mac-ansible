@@ -70,7 +70,7 @@ mas_installed_apps: []
 mas_email: "jaysonpaul@gmail.com"
 mas_password: ""
 
-osx_script: "~/.osx --no-restart"
+osx_script: "/Users/jpaul/.osx --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
