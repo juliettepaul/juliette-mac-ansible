@@ -32,3 +32,8 @@
     user_install: false
     executable: "{{ item.executable | default(omit) }}"
   loop: "{{ gem_packages }}"
+
+- name: Install extra package specific commands
+  become: yes
+  command: "{{ item.cmd }}"
+  loop: "{{ extra_packages_cmds }}"
