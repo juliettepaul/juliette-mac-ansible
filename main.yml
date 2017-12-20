@@ -27,8 +27,6 @@
       tags: ['dock']
     - role: iterm
       tags: ['iterm']
-    - role: keyboard
-      tags: ['keyboard']
 
   tasks:
     - import_tasks: tasks/sudoers.yml
