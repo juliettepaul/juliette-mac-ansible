@@ -26,13 +26,16 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - gh
   - python
+  - ccat
   - cfssl
   - ctags
   - dockutil
   - fzf
   - git
   - gpg
+  - jq
   - kubernetes-cli
+  - kubectx
   - mas
   - node
   - rbenv
