@@ -42,8 +42,7 @@ homebrew_installed_packages:
   - readline
   - ripgrep
   - ruby
-  - socat
-  - datawire/blackbird/telepresence
+  - stern
   - the_silver_searcher
   - vim
   - watch
