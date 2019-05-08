@@ -37,12 +37,17 @@ homebrew_installed_packages:
   - kubernetes-cli
   - kubectx
   - mas
+  - neofetch
   - node
+  - ranger
+  - python
   - rbenv
   - readline
   - ripgrep
   - ruby
+  - socat
   - stern
+  - datawire/blackbird/telepresence
   - the_silver_searcher
   - vim
   - watch
@@ -50,6 +55,7 @@ homebrew_installed_packages:
   - wrk
   - zsh-history-substring-search
   - zplug
+  - zsh
 
 homebrew_taps:
   - homebrew/core
