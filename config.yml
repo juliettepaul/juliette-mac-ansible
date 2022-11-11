@@ -10,7 +10,7 @@ configure_dotfiles: yes
 configure_sudoers: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/jayson/dotfiles.git
+dotfiles_repo: git@github.com:jayson/dotfiles.git
 dotfiles_push_url: git@github.com:jayson/dotfiles.git
 dotfiles_repo_local_destination: ~/projects/dotfiles
 
@@ -25,19 +25,26 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - gh
   - python
+  - bat
   - ccat
+  - coreutils
   - cfssl
   - ctags
   - dockutil
+  - drone-cli
   - fzf
   - git
+  - gh
   - gpg
   - httpie
+  - htop
   - jq
   - kubernetes-cli
   - kubectx
+  - k9s
   - mas
   - neofetch
+  - neovim
   - node
   - ranger
   - python
@@ -45,47 +52,50 @@ homebrew_installed_packages:
   - readline
   - ripgrep
   - ruby
+  - sketchybar
+  #- skhd
   - socat
   - stern
   - datawire/blackbird/telepresence
-  - the_silver_searcher
   - vim
   - watch
   - wget
   - wrk
   - zsh-history-substring-search
+  #- yabai
   - zplug
   - zsh
 
 homebrew_taps:
   - homebrew/core
-  - caskroom/cask
-  - caskroom/fonts
+  - homebrew/homebrew-cask
+  - homebrew/cask-fonts
+  - FelixKratz/formulae
 
+    # TODO: 
+    #
+    # curl https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.3/sketchybar-app-font.ttf > $HOME/Library/Fonts/sketchybar-app-font.ttf
+# TODO: Rewrite this as a brew cask install loop. This is very broken with the moving around of the above taps.
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - alfred
-#  - google-chrome
-#  - slack
-  - vagrant
-#  - virtualbox
-  - dashlane
+  - discord
   - docker
   - fantastical
-  - font-robotomono-nerd-font
-  - google-chrome
-  - gpg-suite
-  - insomniax
+  - firefox
+  - google-cloud-sdk
+  - hammerspoon
   - iterm2
-  - little-snitch
-  - micro-snitch
-  - slack
-  - spectacle
+  - osxfuse
   - vagrant
-  - virtualbox
-  - vscode
-  - xquartz
-#  - osxfuse
+  - font-hack-nerd-font
+  - sf-symbols
+  #- font-roboto-mono-nerd-font
+  #- gpg-suite
+  #- little-snitch
+  #- micro-snitch
+  #- vscode
+  #- xquartz
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -135,6 +145,7 @@ gem_packages:
 composer_packages: []
 npm_packages: []
 pip_packages: []
+extra_packages_cmds: []
 
 dockitems_remove:
   - Launchpad
