@@ -1,0 +1,15 @@
+---
+homebrew_installed_packages:
+  - autoconf
+  - bash-completion
+  - gettext
+  - sqlite
+  - ssh-copy-id
+  - readline
+  - pv
+  - wget
+  - wrk
+
+homebrew_cask_apps:
+  - firefox
+  - licecap

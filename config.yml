@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+
+>>>>>>> geerlingguy-master
 user: jpaul
 downloads: ~/.ansible-downloads/
 
@@ -9,8 +16,9 @@ configure_osx: yes
 dotfiles_repo: git@github.com:jayson/dotfiles.git
 dotfiles_push_url: git@github.com:jayson/dotfiles.git
 dotfiles_repo_local_destination: ~/projects/dotfiles
+
 dotfiles_files:
-  - .bash_profile
+  - .zshrc
   - .gitignore
   - .inputrc
   - .osx
@@ -18,6 +26,8 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - gh
+  - python
   - bat
   - ccat
   - coreutils
@@ -53,6 +63,8 @@ homebrew_installed_packages:
   - vim
   - watch
   - wget
+  - wrk
+  - zsh-history-substring-search
   #- yabai
   - zplug
   - zsh
@@ -88,12 +100,46 @@ homebrew_cask_apps:
   #- vscode
   #- xquartz
 
-# See `geerlingguy.mas` role documentation for usage instructions.
+# See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: "jaysonpaul@gmail.com"
 mas_password: ""
 
 osx_script: "/Users/jpaul/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
+sublime_base_path: "~/Library/Application Support/Sublime Text"
+sublime_config_path: "Packages/User"
+sublime_package_control:
+  - "DocBlockr"
+  - "Dockerfile Syntax Highlighting"
+  - "FileDiffs"
+  - "GitHub Flavored Markdown Preview"
+  - "Jinja2"
+  - "Package Control"
+  - "Pretty JSON"
+  - "SublimeLinter"
+  - "SublimeLinter-contrib-yamllint"
+  - "Theme - Cobalt2"
+  - "TrailingSpaces"
+  - "WordingStatus"
 
 gem_packages:
   - name: bundler
@@ -104,7 +150,7 @@ npm_packages: []
 pip_packages: []
 extra_packages_cmds: []
 
-dockitems_to_remove:
+dockitems_remove:
   - Launchpad
   - Contacts
   - Notes
@@ -118,7 +164,7 @@ dockitems_to_remove:
   - System Preferences
   - Downloads
 
-dockitems_to_persist:
+dockitems_persist:
   - name: Notes
     path: /Applications/Notes.app
     position: 1
